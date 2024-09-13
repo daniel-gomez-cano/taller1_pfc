@@ -11,13 +11,13 @@ class Torre_hanoi{
       if(n_mov == 1){
       val movimientoDisco = List(poste_Inicio, poste_Final)
       
-      println("Mueve "+n_mov+" Desde "+movimientoDisco(0)+" Hasta "+movimientoDisco(1))} else{
+      println(movimientoDisco)} else{
       
         val movimientosPrimeraParte = listaTorresHanoi(n_mov-1, poste_Inicio, poste_medio, poste_Final)
         
         val movimientoDisco = List(poste_Inicio, poste_Final)
         
-        println("Mueve "+n_mov+" Desde "+movimientoDisco(0)+" Hasta "+movimientoDisco(1))
+        println(movimientoDisco)
         
         val movimientosSegundaParte = listaTorresHanoi(n_mov-1, poste_medio, poste_Final,  poste_Inicio)
     }
