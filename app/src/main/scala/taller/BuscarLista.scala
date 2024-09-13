@@ -1,5 +1,7 @@
 package taller
 
+import scala.annotation.tailrec
+
 class BuscarLista() {
   def buscarElemento(lista: List[Int], elemento: Int): Boolean = {
   lista match {
