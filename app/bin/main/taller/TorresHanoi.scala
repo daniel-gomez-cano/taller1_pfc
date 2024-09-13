@@ -6,7 +6,7 @@ class Torre_hanoi{
         BigInt(2).pow(n_mov) - 1
     }
     
-    def listaTorresHanoi (n_mov: Int, poste_Inicio: Char,poste_medio: Char,poste_Final: Char): Unit = {
+    def listaTorresHanoi (n_mov: Int, poste_Inicio: Char,poste_Final: Char,poste_medio: Char): Unit = {
     if (n_mov == 0) {println("No hay discos")} else 
       if(n_mov == 1){
       val movimientoDisco = List(poste_Inicio, poste_Final)
