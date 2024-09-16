@@ -27,11 +27,13 @@ class MaxIt {
       maxIt_nAux(l.tail, l.head)
   }
 }
-  //metodo para hallar el menor valor en una lista no vacia de enteros positivos con recursion lineal
+  //metodo para hallar el mayor valor en una lista no vacia de enteros positivos 
+  //con Recursión Lineal ;)
 class MaxLin {
+
   def maxLin(l: List[Int]): Int = {
     if (l.isEmpty) throw new NoSuchElementException("La lista no puede estar vacia")
-    else if (l.tail.isEmpty) l.head // Si la lista tiene un solo elemento, ese es el máximo xd
+    else if (l.tail.isEmpty) l.head //Si la lista tiene un elemento, ese es el máximo
     else l.head max maxLin(l.tail) //Compara el primer elemento con el máximo del resto
   }
 }

@@ -1,15 +1,20 @@
 package taller
+import scala.NoSuchElementException
 
 class Torre_hanoi{
 
     def movsTorresHanoi (n_discos : Int ): BigInt = {
         //formula que calcula 2 elevado al numero de discos - 1
         //Resultado igual al numero de movimientos
-        BigInt(2).pow(n_discos) - 1
+        //require(n_discos >= 0, "El número de discos debe ser mayor a 0")
+        if(n_discos < 0) throw new NoSuchElementException("El número de discos debe ser mayor a 0")
+        else if(n_discos == 0) 0
+        else BigInt(2).pow(n_discos) - 1
     }
     
     def listaTorresHanoi(n: Int, t1: Int, t2: Int, t3: Int): List[(Int, Int)] = {
-        if (n == 0) {
+        if(n < 0) throw new NoSuchElementException("El número de discos debe ser mayor a 0")
+        else if (n == 0) {
             List()  //caso base
         } else {
             

@@ -5,9 +5,12 @@ package taller
 
 object App {
   def main(args: Array[String]): Unit = {
-    val hanoi = new Torre_hanoi
-    println(hanoi.movsTorresHanoi(3))
-    println(hanoi.listaTorresHanoi(3,1,2,3))
+    //val hanoi = new Torre_hanoi
+    //println(hanoi.movsTorresHanoi(3))
+    //println(hanoi.listaTorresHanoi(3,1,2,3))
+    val maxLin = new MaxLin()
+    maxLin.maxLin(List(3,1,4,1,5))
+    println(maxLin.maxLin(List(3,1,4,1,5)))
   }
 
   def greeting(): String = "Hello, world!"

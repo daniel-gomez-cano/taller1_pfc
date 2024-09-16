@@ -23,4 +23,10 @@ class MovsHanoiTest extends AnyFunSuite {
   test("Lista de movimientos con 3 discos") {
     assert(objMovsHanoi.listaTorresHanoi(3,1,2,3) === List((1,3), (1,2), (3,2), (1,3), (2,1), (2,3), (1,3)))
   }
+
+  test("Cuando el número de discos es menor a 0") {
+    assertThrows[NoSuchElementException] {
+      objMovsHanoi.listaTorresHanoi(-1,1,2,3)
+    }
+  }
 }

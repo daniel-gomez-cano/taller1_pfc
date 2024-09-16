@@ -15,7 +15,7 @@ class MaxLinTest extends AnyFunSuite {
         assert(objMaxLin.maxLin(List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) == 10)
     }
     test("Encontrar el mayor en List(5,8,3,1,7,9,2,4,6)") {
-        assert(objMaxLin.maxLin(List(5,8,3,1,7,9,2,4,6)) == 9)
+            assert(objMaxLin.maxLin(List(5,8,3,1,7,9,2,4,6)) == 9)
     }
     test("Encontrar el mayor en List(3)") {
         assert(objMaxLin.maxLin(List(3)) == 3)
