@@ -5,7 +5,8 @@ package taller
 
 object App {
   def main(args: Array[String]): Unit = {
-    println(greeting())
+    val hanoi = new Torre_hanoi
+    println(hanoi.listaTorresHanoi(3,1,2,3))
   }
 
   def greeting(): String = "Hello, world!"
